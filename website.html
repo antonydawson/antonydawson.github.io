@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="content.css">
+
+</head>
+<body>
+  <header>
+    <div class="header-text"><a href="awards.html">About</a></div>
+    <div><a href="mailto:antonydawson151@gmail.com"><img src="assets/mail.png" alt=""></a></div>
+  </header>
+
+  <div class="bg">
+    <div class="slide-track">
+      <img src="assets/logo.png" alt="">
+      <video src="assets/sphere.MP4" type="video/mp4"></video>
+      <img src="assets/editorial.png" alt="">
+      <img src="assets/slicing_test.png" alt="">
+      <img src="assets/club.jpg" alt="">
+      <video src="assets/Final-robit.MP4" type="video/mp4"></video>
+
+    </div>
+  </div>
+
+  <main>
+    <div class="title">Antony Dawson</div>
+    <div class="subtitle">Design Portfolio</div>
+    <a href="#projects-catalog"><button class="catalog">Explore Catalog</button></a>
+  </main>
+
+  <div class="content" id="projects-catalog">
+    
+    <img id="1" src="assets/cup1.png" alt="">
+    <img id="2" src="assets/cup2.png" alt="">
+    <img id="22" src="assets/BLUEBLITZ.png" alt="">
+    <img id="3" src="assets/5-Chettattukaran-Final.jpeg" alt="">
+    <img id="4" src="assets/1.2-Chettattukaran.jpg" alt="">
+    <img id="5" src="assets/Final (1).jpg" alt="">
+    <img id="6" src="assets/S25_1020_AntonyDawson_302010_Ex3_001.jpeg" alt="">
+    <img id="7" src="assets/S25_1020_AntonyDawson_312010_Ex4_007.jpeg" alt="">
+    <img id="8" src="assets/S25_1020_AntonyDawson_302010_Ex1_031.jpeg" alt="">
+    <img id="9" src="assets/2.1-Chettattukaran-1.jpg" alt="">
+    <img id="10" src="assets/2.1-Chettattukaran-2.jpg" alt="">
+    <img id="11" src="assets/2.2-Chettattukaran-final.jpeg" alt="">
+    <img id="12" src="assets/3-Chettattukaran-1.jpg" alt="">
+    <img id="13" src="assets/3-Chettattukaran-2.jpg" alt="">
+    <img id="14" src="assets/3-Chettattukaran-final (1).jpg" alt="">
+    <img id="15" src="assets/4-Chettattukaran-Ballpoint.jpg" alt="">
+    <img id="16" src="assets/4-Chettattukaran-Charcoal.jpg" alt="">
+    <img id="17" src="assets/3d-print_002.jpg" alt="">
+    <img id="18" src="assets/model_001 (1).png" alt="">
+    <img id="19" src="assets/model_002 (1).png" alt="">
+    <img id="20" src="assets/model_003 (1).png" alt="">
+    <img id="21" src="assets/S25_1020_AntonyDawson_302010_Ex2_001.jpeg" alt="">
+
+    <img id="22" src="assets/art (1).jpg" alt="">
+    <img id="23" src="assets/art (2).jpg" alt="">
+    <img id="24" src="assets/art (3).jpg" alt="">
+    <img id="25" src="assets/art (4).jpg" alt="">
+    <img id="26" src="assets/art (5).jpg" alt="">
+    <img id="27" src="assets/art (6).jpg" alt="">
+    <img id="28" src="assets/art (7).jpg" alt="">
+    <img id="29" src="assets/art (8).jpg" alt="">
+    <img id="30" src="assets/art (9).jpg" alt="">
+    <img id="31" src="assets/art (10).jpg" alt="">
+    <img id="32" src="assets/art (11).jpg" alt="">
+    <img id="33" src="assets/art (12).jpg" alt="">
+    <img id="34" src="assets/art (13).jpg" alt="">
+    <img id="35" src="assets/art (14).jpg" alt="">
+    <img id="36" src="assets/art (15).jpg" alt="">
+    <img id="37" src="assets/art (16).jpg" alt="">
+
+
+
+
+  </div>
+
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+    
+    document.querySelectorAll('img').forEach(image => {
+      image.addEventListener('click', function(event) {
+        // Your code to execute when any image is clicked
+        var img = document.getElementById(event.target.id);
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        modal.style.display = "block";
+        modalImg.src = img.src;
+        captionText.innerHTML = this.alt;
+        
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+      });
+    });
+  
+    </script>
+</body>
+</html>
