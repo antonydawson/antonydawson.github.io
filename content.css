@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
-.content img {
+.content img, video {
     width: 100%;
     padding: .5rem;
      height: 100%; 
@@ -10,7 +10,7 @@
 
 }
 
-.content > img:hover {
+.content > img:hover, video:hover {
     opacity: 0.5;
     transition: 1s;
     /* background-color: gray; */
