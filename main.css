@@ -109,3 +109,11 @@ text-align: center;
   object-fit: cover;
   flex-shrink: 0;
 }
+
+.divider {
+  font-family: "Stardos Stencil", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  padding: 1rem;
+}
